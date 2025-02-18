@@ -1,6 +1,18 @@
-import { useState } from 'react'
+import {GlobalProvider} from "./Context/GlobalContext"
+import Header from "./Components/Header"
+import Main from "./Components/Main"
 
+function App() {
+  
 
-export default function App() {
-  const [list, setList] = useState([]);
+  return (
+   <GlobalProvider>
+   
+   <Header />
+   <Main />
+   
+   </GlobalProvider>
+  )
 }
+
+export default App
